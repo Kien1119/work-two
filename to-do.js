@@ -53,7 +53,7 @@ const updateList = () => {
         `;
     }
   } else {
-    out += '<li class="divider">Completed</li>';
+    out += '<li class="divider">No tasks defined</li>';
   }
   if (done.length) {
     out += '<li class="divider">Completed</li>';
