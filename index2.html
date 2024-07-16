@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>"
+    />
+  </head>
+  <body>
+    <h1>📋 My tasks</h1>
+    <form action="#" id="todolist">
+      <div class="new-task-form">
+        <label for="new-task">➕ Add a task</label>
+        <input
+          id="new-task"
+          autocomplete="off"
+          type="text"
+          placeholder="Try typing 'Buy milk'"
+          title="Click to start adding a task"
+        />
+        <input type="submit" value="➡️" />
+      </div>
+      <ul id="tasks">
+        <li class="diver">No tasks defined</li>
+      </ul>
+    </form>
+    <button id="clearButton" type="button">
+      <i class="fa fa-trash" aria-hidden="true"></i>Clear All Tasks
+    </button>
+    <script src="to-do.js"></script>
+  </body>
+</html>
